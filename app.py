@@ -8,14 +8,14 @@ from streamlit_pandas_profiling import st_profile_report
 
 
 #file_upload = st.file_uploader("Uploader votre csv à analyser", type=["csv"])
-#file_upload = st.file_uploader("Uploader votre json à analyser", type=["json"])
-file_upload = st.file_uploader("Uploader votre csv à analyser")
+file_upload = st.file_uploader("Uploader votre json à analyser", type=["json"])
+#file_upload = st.file_uploader("Uploader votre csv à analyser")
 
-print(type(file_upload))
+#print(type(file_upload))
 
 if file_upload is not None:
-     df = pd.read_csv(file_upload)
-    # df = pd.read_json(file_upload)
+    # df = pd.read_csv(file_upload)
+     df = pd.read_json(file_upload)
 
 else:
 	
