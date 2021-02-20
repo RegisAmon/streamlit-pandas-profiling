@@ -1,3 +1,3 @@
 # streamlit-pandas-profiling
 
-![Farmers Market Finder Demo](demo/demo.gif)
+![Demo](streamlit-pandas-profiling/pandas profiling.gif)
