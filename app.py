@@ -6,7 +6,6 @@ from streamlit_pandas_profiling import st_profile_report
 
 
 
-
 file_upload = st.file_uploader("Uploader votre csv à analyser", type=["csv"])
 #file_upload = st.file_uploader("Uploader votre json à analyser", type=["json"])
 #file_upload = st.file_uploader("Uploader votre csv à analyser")
@@ -26,6 +25,7 @@ else:
 
 pr = ProfileReport(df, explorative=True)
 
-st.title("Pandas Profiling in Streamlit")
+st.title("Analyser votre Dataset avec Pandas-profiling")
+st.header("Insérer votre Dataset au format csv, Pandas-profiling s'occupe de l'analyser")
 st.write(df)
 st_profile_report(pr)
