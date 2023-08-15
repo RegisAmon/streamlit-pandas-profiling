@@ -19,7 +19,7 @@ st.markdown("""Pour chaque colonne, les statistiques suivantes - si elles sont p
 - L'analyse de texte apprend les catégories (majuscules, espace), les scripts (latin, cyrillique) et les blocs (ASCII) de données textuelles. 
 - L'analyse des fichiers et des images extrait la taille des fichiers, les dates de création et les dimensions et recherche les images tronquées ou celles contenant des informations EXIF.""")
 
-file_upload = st.file_uploader("Uploader votre csv à analyser", type=["csv"], sep=";")
+file_upload = st.file_uploader("Uploader votre csv à analyser", type=["csv"], separator =";")
 #file_upload = st.file_uploader("Uploader votre json à analyser", type=["json"])
 #file_upload = st.file_uploader("Uploader votre csv à analyser")
 
